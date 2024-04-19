@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Ventas</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light" id="fondo">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../home.html">Wafflitos</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="clientes.html">Clientes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="productos.html">Productos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="proveedores.html">Proveedores</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="ventas.html">Ventas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="compras.html">Compras</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    <center>
+    </nav>
+    <center>
+    <div style="background-image: url(../assets/logo.jpeg); background-size: contain; width: 700px; height: 700px;">
+      <h1 id="text_title">Ventas</h1>
+      <form>
+        <label for="cod_barra" id="text_form" class="container">Código de Barras:</label>
+        <input type="number" id="cod_barra" name="cod_barra" required>
+        <br>
+        <label for="cantidad" id="text_form" class="container">Cantidad:</label>
+        <input type="number" id="cantidad" name="cantidad" required>
+        <br>
+        <label for="precio_unitario_venta" id="text_form" class="container">Precio Unitario de Venta:</label>
+        <input type="number" step="0.01" id="precio_unitario_venta" name="precio_unitario_venta" required>
+        <br>
+        <label for="fecha_venta" id="text_form" class="container">Fecha de Venta:</label>
+        <input type="date" id="fecha_venta" name="fecha_venta" required>
+        <br>
+        <input type="submit" value="Registrar">
+      </form>
+    </div>
+  </center>  
+
+</body>
+</html>
